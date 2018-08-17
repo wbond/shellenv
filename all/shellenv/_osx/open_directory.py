@@ -109,7 +109,7 @@ def get_user_login_shell(username=None):
         node = OpenDirectory.ODNodeCreateWithName(
             CoreFoundation.kCFAllocatorDefault,
             session,
-            unicode_to_cfstring("/Local/Default"),
+            unicode_to_cfstring("/Search"),
             byref(error_ref)
         )
         if bool(error_ref):
